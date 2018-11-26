@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Accion } from '../accion';
-import { ACCIONES } from '../mock-acciones';
+import { ACCIONES } from '../lista-acciones';
 
 @Component({
   selector: 'app-acciones',
