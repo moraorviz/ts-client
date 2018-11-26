@@ -1,0 +1,21 @@
+<h2>Acciones disponibles</h2>
+<ul class="acciones">
+  <li *ngFor="let accion of acciones"
+    [class.selected]="accion === selectedAccion"
+    (click)="onSelect(accion)">
+    <span class="badge">{{accion.id}}</span> {{accion.name}}
+  </li>
+</ul>
+
+<div *ngIf="selectedAccion">
+
+  <h2>{{selectedAccion.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{selectedAccion.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="selectedAccion.name" placeholder="name">
+    </label>
+  </div>
+
+</div>
+
