@@ -3,7 +3,9 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AccionesComponent } from './acciones/acciones.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: 'acciones', component: AccionesComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
