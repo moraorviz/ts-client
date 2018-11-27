@@ -11,14 +11,10 @@ import { ACCIONES } from '../lista-acciones';
 export class AccionesComponent implements OnInit {
 
   acciones = ACCIONES;
-  selectedAccion: Accion;
 
   constructor() { }
 
   ngOnInit() {
   }
 
-    onSelect(accion: Accion): void {
-    this.selectedAccion = accion;
-  }
 }
